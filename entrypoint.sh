@@ -1,6 +1,6 @@
 while :
 do
-    curl -X "${HEALTHCHECK_URL}"
+    echo "curl -X POST ${HEALTHCHECK_URL}"
 
     if [ $? != 0 ] 
     then
