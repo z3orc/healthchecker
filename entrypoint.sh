@@ -1,5 +1,11 @@
-#!/bin/bash
-
 while :
 do
-    curl -X post ${HEALTHCHECK_URL}
+    curl -X "${HEALTHCHECK_URL}"
+
+    if [ $? != 0 ] 
+    then
+        exit 1
+    fi
+
+    sleep "${DELAY}"
+done
