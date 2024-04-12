@@ -1,7 +1,7 @@
 while :
 do
     now=$(date +'%Y-%m-%dT%H:%M:%S%z')
-    curl -s -X POST ${HEALTHCHECK_URL}
+    curl -s -X POST ${HEALTHCHECK_URL} > /dev/null
 
     if [ $? != 0 ] 
     then
