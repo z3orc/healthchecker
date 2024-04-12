@@ -8,7 +8,7 @@ do
         echo "${date} Error while sending request"
         exit 1
     fi
-    echo "${date} Sending all-good signal to Healthcheck
+    echo "${date} Sending all-good signal to Healthcheck"
 
     sleep ${DELAY}
 done
