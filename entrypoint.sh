@@ -5,10 +5,10 @@ do
 
     if [ $? != 0 ] 
     then
-        echo "${now} Error while sending request" 2>&1
+        echo "${now} Error while sending request"
         # exit 1
     fi
-    echo "${now} Sending all-good signal to Healthcheck" 2>&1
+    echo "${now} Sending all-good signal to Healthcheck"
 
     sleep ${DELAY}
 done
